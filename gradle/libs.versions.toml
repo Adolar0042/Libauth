@@ -1,5 +1,6 @@
 [versions]
-agp = "8.1.0"
+agp = "8.3.0-alpha01"
+dynamictheme = "1.0.3"
 kotlin = "1.9.0"
 hilt = "2.46.1"
 hilt-navigation = "1.0.0"
@@ -12,7 +13,8 @@ lifecycle-runtime-ktx = "2.6.1"
 activity-compose = "1.7.2"
 compose-bom = "2023.08.00"
 compose-compiler = "1.5.1"
-navigation-compose = "2.6.0"
+materialIconsExtended = "1.5.0"
+navigation-compose = "2.7.1"
 room = "2.5.2"
 retrofit = "2.9.0"
 okhttp-logging-interceptor = "4.10.0"
@@ -29,6 +31,7 @@ lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtim
 lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle-runtime-ktx" }
 activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+dynamictheme = { module = "com.github.t8rin:dynamictheme", version.ref = "dynamictheme" }
 ui = { group = "androidx.compose.ui", name = "ui" }
 ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
@@ -36,6 +39,7 @@ ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
 navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation-compose" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation" }

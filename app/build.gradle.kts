@@ -8,15 +8,15 @@ plugins {
 }
 
 android {
-    namespace = "com.hadiyarajesh.composetemplate"
+    namespace = "dev.adolar0042.libauth"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.hadiyarajesh.composetemplate"
+        applicationId = "dev.adolar0042.libauth"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "0.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -61,6 +61,8 @@ dependencies {
     implementation(platform(libs.compose.bom))
     implementation(libs.bundles.compose.ui.impl)
     implementation(libs.material3)
+    implementation(libs.androidx.material.icons.extended)
+    implementation(libs.dynamictheme)
     implementation(libs.navigation.compose)
 
     implementation(libs.hilt.android)
