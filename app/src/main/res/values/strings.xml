@@ -11,4 +11,5 @@
     <string name="menu">Menu</string>
     <string name="search">Search</string>
     <string name="add_action">Add new item</string>
+    <string name="settings">Settings</string>
 </resources>
