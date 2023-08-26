@@ -51,7 +51,7 @@ import dev.adolar0042.libauth.ui.components.LoadingIndicator
 import dev.adolar0042.libauth.ui.components.VerticalSpacer
 import dev.adolar0042.libauth.ui.navigation.TopLevelDestination
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalAnimationApi::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
     uiState: HomeScreenUiState,
@@ -235,7 +235,10 @@ private fun HomeScreenContent(
         ) {
             Text(text = welcomeMessage)
             VerticalSpacer(size = 16)
-            Button(onClick = { onNavigateClick(context.getString(R.string.home_screen)) }) {
+            Button(onClick = {
+                viewModel.menuState = false
+                onNavigateClick(context.getString(R.string.home_screen))
+            }) {
                 Text(
                     text = stringResource(
                         R.string.go_to_screen,
